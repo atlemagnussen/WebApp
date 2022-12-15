@@ -16,13 +16,3 @@ html {
 body {
   margin-bottom: 60px;
 }
-
-.landing-page {
-    height: auto;
-    width: auto;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10%;
-    font-size: 40px;
-    background-color: black;
-}
