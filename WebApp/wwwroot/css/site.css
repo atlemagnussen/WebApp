@@ -16,3 +16,11 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.full-screen {
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20%;
+}
