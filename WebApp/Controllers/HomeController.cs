@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using WebApp.Models;
+using WebApp.Resources;
 
 namespace WebApp.Controllers
 {
@@ -27,6 +28,20 @@ namespace WebApp.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public IActionResult GoToEnglishPage()
+        {
+            St.InitializeLocalization("en-US");
+
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult GoToNorwegianPage()
+        {
+            St.InitializeLocalization("nb-NO");
+
+            return RedirectToAction("Index");
         }
     }
 }

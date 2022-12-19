@@ -3,6 +3,7 @@ using System.Resources;
 
 namespace WebApp.Resources
 {
+    //Get's the localized strings from the resx files
     public static class St
     {
         public static CultureInfo currentCulture = CultureInfo.CreateSpecificCulture("en-US");
