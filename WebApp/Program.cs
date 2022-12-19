@@ -1,3 +1,5 @@
+using WebApp.Resources;
+
 namespace WebApp
 {
     public class Program
@@ -5,6 +7,8 @@ namespace WebApp
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            St.InitializeLocalization("en-US");
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
