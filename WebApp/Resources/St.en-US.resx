@@ -117,6 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="intro.p1" xml:space="preserve">
+    <value>Hessdalen is a small valley in the central part of Norway. At the end of 1981 through 1984, residents of the Valley became concerned and alarmed about strange, unexplained lights that appeared at many locations throughout the Valley.  Hundreds of lights were observed. At the peak of activity there were about 20 reports a week.</value>
+  </data>
+  <data name="intro.p2" xml:space="preserve">
+    <value>Project Hessdalen was established in the summer of 1983. A field investigation was carried out between 21.January and 26.February 1984. Fifty-three light observations were made during the field investigation. You may read the details in the technical report. 
+There was an additional field investigation in the winter of 1985. However, no phenomena were seen during the period when the instruments were present.</value>
+  </data>
+  <data name="intro.p3" xml:space="preserve">
+    <value>Lights are still being observed in the Hessdalen Valley, but their frequency has decreased to about 20 observations a year. An automatic measurement station was put up in Hessdalen in August 1998. 
+Both data and alarm-pictures can be viewed on this website.</value>
+  </data>
   <data name="navlink.history" xml:space="preserve">
     <value>History</value>
   </data>

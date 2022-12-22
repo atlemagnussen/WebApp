@@ -1,4 +1,5 @@
-﻿@{
+﻿@using WebApp.Resources;
+@{
     ViewData["Title"] = "Home Page";
     Layout = "_Layout";
 }
@@ -53,18 +54,14 @@
             <br><br>
 
             <p>
-                Hessdalen is a small valley in the central part of Norway. At the end of 1981 through 1984, residents of the Valley became concerned and alarmed about strange, unexplained lights that appeared at many locations throughout the Valley. 
-                Hundreds of lights were observed. At the peak of activity there were about 20 reports a week.
+                @St.r("intro.p1");
             </p>
             <p>
-                Project Hessdalen was established in the summer of 1983. A field investigation was carried out between 21.January and 26.February 1984. 
-                Fifty-three light observations were made during the field investigation. You may read the details in the technical report. 
-                There was an additional field investigation in the winter of 1985. However, no phenomena were seen during the period when the instruments were present.
+                @St.r("intro.p2");
             </p>
 
             <p>
-                Lights are still being observed in the Hessdalen Valley, but their frequency has decreased to about 20 observations a year. An automatic measurement station was put up in Hessdalen in August 1998. 
-                Both data and alarm-pictures can be viewed on this website.
+                @St.r("intro.p3");
             </p>
         </div>
 
@@ -85,24 +82,34 @@
             
             There are several answers to this question:
             <ul>
-            <li>Knowledge of the Hessdalenphenomenon may give us a better 
-            understanding of our world. <i>.. Better knowledge of our world will give us a better understanding 
-            of the consequencies of our treatment 
-            of the natural environment.</i></li>
-            <li>We know the light phenomena produces considerable luminous energy. 
-            Can a study of the Hessdalenphenomenon lead us to a new clean energy source?</li>
-            <li>Todays mystery may be tomorrows technology.</li>
-            <li>Scientific validation of the phenomenon will make it easier for people 
-            to disclose their personal observations. More candor about the phenomena, 
-            as well as other "unknown" phenomena, will facilitate legitimate research on all anomalies. 
-            Hopefully, understanding these anomalies and recognizing they exist, will bring
-            new respect for the delicate balance of the Natural World.
-            </li>
+                <li>Knowledge of the Hessdalenphenomenon may give us a better 
+                    understanding of our world. <i>.. Better knowledge of our world will give us a better understanding 
+                    of the consequencies of our treatment 
+                    of the natural environment.</i></li>
+                <li>We know the light phenomena produces considerable luminous energy. 
+                    Can a study of the Hessdalenphenomenon lead us to a new clean energy source?</li>
+                <li>Todays mystery may be tomorrows technology.</li>
+                <li>Scientific validation of the phenomenon will make it easier for people 
+                    to disclose their personal observations. More candor about the phenomena, 
+                    as well as other "unknown" phenomena, will facilitate legitimate research on all anomalies. 
+                    Hopefully, understanding these anomalies and recognizing they exist, will bring
+                    new respect for the delicate balance of the Natural World.
+                </li>
             </ul>
-            <hr>
-            <p>
         </div>
         
+    </div>
+
+    <br /><br />
+
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RR2TRGq2Zec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-6">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6o0CHUlI43o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
     </div>
 
 
