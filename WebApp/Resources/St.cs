@@ -14,8 +14,6 @@ namespace WebApp.Resources
         public static void InitializeLocalization(string culture)
         {
             currentCulture = CultureInfo.CreateSpecificCulture(culture);
-
-            localizer.GetString("home", currentCulture);
         }
 
         public static string r(string key)
