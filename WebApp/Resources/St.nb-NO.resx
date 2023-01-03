@@ -117,6 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="intro.answer1" xml:space="preserve">
+    <value>"Earthlight" ? (Jordlys), "Min-min light"?, "Ukjent lysfenomen"? - Vi har valgt å kalle det "Hessdalsfenomenet".</value>
+  </data>
+  <data name="intro.answer2.header" xml:space="preserve">
+    <value>Det er flere svar på dette spørsmålet:</value>
+  </data>
+  <data name="intro.answer2.li1" xml:space="preserve">
+    <value>Da fortsatt ingen har funnet svaret på hva fenomenet er, vil svaret sannsynligvis gi oss ny viten om vår verden. .. (og en mer viten om vår verden vil kunne gi oss et bedre grunnlag til å bedre forstå konsekvensene av våre handlinger mot vår verden ("naturen")).</value>
+  </data>
+  <data name="intro.answer2.li2" xml:space="preserve">
+    <value>Vi vet det er mye (lys) energi i dette fenomenet. Kan studiet av dette lede oss til en ny ren energikilde?</value>
+  </data>
+  <data name="intro.answer2.li3" xml:space="preserve">
+    <value>Dagens mysterium kan bli morgendagens teknologi.</value>
+  </data>
+  <data name="intro.answer2.li4" xml:space="preserve">
+    <value>Det vil bli lettere for personer å fortelle andre om sine opplevelser. En større åpenhet om slike fenomener, og andre "ukjente" fenomener, vil kunne gjøre det lettere å starte forskning på disse områdene. Det vil igjen kunne gi en bedre insikt om vår verden.</value>
+  </data>
   <data name="intro.p1" xml:space="preserve">
     <value>Hessdalen er en liten dal i Norge, ca.12 mil syd for Trondheim. I desember 1981 begynte innbyggerne å se merkelige lysfenomener, ofte beskrevet som lysende store kuler, som beveget seg rundt nede i dalen. Fram til slutten av 1984 ble flere hundre observasjoner ble gjort i dalen. På det meste var det opp til 20 observasjoner i uka. Dette ble etterhvert kjent blant folk, og mange reiste til Hessdalen og fikk se fenomenet selv.</value>
   </data>
@@ -125,6 +143,12 @@
   </data>
   <data name="intro.p3" xml:space="preserve">
     <value>Fortsatt gjøres det observasjoner i Hessdalen, men antallet er nå ca. 20 i året. En automatisk målestasjon ble satt opp i Hessdalen i august 1998. Data og alarm-bilder fra den målestasjon blir sendt til denne web-portalen.</value>
+  </data>
+  <data name="intro.question1" xml:space="preserve">
+    <value>Hva skal dette "fenomenet" kalles?</value>
+  </data>
+  <data name="intro.question2" xml:space="preserve">
+    <value>Hvorfor er det viktig å finne løsningen på dette fenomenet?</value>
   </data>
   <data name="navlink.history" xml:space="preserve">
     <value>Historie</value>

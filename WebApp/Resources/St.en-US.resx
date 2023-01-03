@@ -117,6 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="intro.answer1" xml:space="preserve">
+    <value>Earthlights? Min-min lights? Unknown lights? - Or, just: The "Hessdalsphenomena"</value>
+  </data>
+  <data name="intro.answer2.header" xml:space="preserve">
+    <value>There are several answers to this question:</value>
+  </data>
+  <data name="intro.answer2.li1" xml:space="preserve">
+    <value>Knowledge of the Hessdalen phenomenon may give us a better 
+                    understanding of our world. .. Better knowledge of our world will give us a better understanding 
+                    of the consequencies of our treatment 
+                    of the natural environment.</value>
+  </data>
+  <data name="intro.answer2.li2" xml:space="preserve">
+    <value>We know the light phenomena produces considerable luminous energy. Can a study of the Hessdalenphenomenon lead us to a new clean energy source?</value>
+  </data>
+  <data name="intro.answer2.li3" xml:space="preserve">
+    <value>Todays mystery may be tomorrows technology.</value>
+  </data>
+  <data name="intro.answer2.li4" xml:space="preserve">
+    <value>Scientific validation of the phenomenon will make it easier for people to disclose their personal observations. More candor about the phenomena, as well as other "unknown" phenomena, will facilitate legitimate research on all anomalies. Hopefully, understanding these anomalies and recognizing they exist, will bring new respect for the delicate balance of the Natural World.</value>
+  </data>
   <data name="intro.p1" xml:space="preserve">
     <value>Hessdalen is a small valley in the central part of Norway. At the end of 1981 through 1984, residents of the Valley became concerned and alarmed about strange, unexplained lights that appeared at many locations throughout the Valley.  Hundreds of lights were observed. At the peak of activity there were about 20 reports a week.</value>
   </data>
@@ -127,6 +148,12 @@ There was an additional field investigation in the winter of 1985. However, no p
   <data name="intro.p3" xml:space="preserve">
     <value>Lights are still being observed in the Hessdalen Valley, but their frequency has decreased to about 20 observations a year. An automatic measurement station was put up in Hessdalen in August 1998. 
 Both data and alarm-pictures can be viewed on this website.</value>
+  </data>
+  <data name="intro.question1" xml:space="preserve">
+    <value>What shall this "phenomena" be called?</value>
+  </data>
+  <data name="intro.question2" xml:space="preserve">
+    <value>Why is it important to observe and study this phenomenon?</value>
   </data>
   <data name="navlink.history" xml:space="preserve">
     <value>History</value>
