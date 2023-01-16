@@ -30,6 +30,16 @@ namespace WebApp.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
+        public IActionResult History() 
+        {
+            return View();
+        }
+
+        public IActionResult ComingSoon()
+        {
+            return View();
+        }
+
         public IActionResult GoToEnglishPage()
         {
             St.InitializeLocalization("en-US");
