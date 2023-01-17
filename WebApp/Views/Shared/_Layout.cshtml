@@ -21,17 +21,17 @@
         	<ul class="navbar-nav">
                 <li style="padding-left : 15rem" ></li>
                         <li class="nav-item"> <a class="navbar-brand" asp-controller="Home" asp-action="Index"><img src="~/Media/Logo-HomeLink.svg" style="width:79%;height:79%; "></a> </li>
-        		<li class="nav-item"><a class="nav-link" href="#"> History </a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="ComingSoon"> History </a></li>
         		<li class="nav-item dropdown">
         		   <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  Live cams  </a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-        			  <li><a class="dropdown-item" href="#"> Cam 1</a></li>
-        			  <li><a class="dropdown-item" href="#"> Cam 2 </a></li>
-        			  <li><a class="dropdown-item" href="#"> Cam 3 </a></li>
-                      <li><a class="dropdown-item" href="#"> Cam 4 </a></li>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" asp-controller="Home" asp-action="ComingSoon"> Cam 1</a></li>
+                        <li><a class="dropdown-item" asp-controller="Home" asp-action="ComingSoon"> Cam 2 </a></li>
+                        <li><a class="dropdown-item" asp-controller="Home" asp-action="ComingSoon"> Cam 3 </a></li>
+                        <li><a class="dropdown-item" asp-controller="Home" asp-action="Comingsoon"> Cam 4 </a></li>
         		    </ul>
         		</li>
-                <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Home" asp-action="ReportSighting"> Report your sighting! </a></li>
+                <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="ReportSighting"> Report your sighting! </a></li>
         	</ul>
           </div> <!-- navbar-collapse.// -->
          </div> <!-- container-fluid.// -->
