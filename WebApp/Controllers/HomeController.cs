@@ -40,6 +40,11 @@ namespace WebApp.Controllers
             return View();
         }
 
+        public IActionResult ReportSighting() 
+        {
+            return View();
+        }
+
         public IActionResult GoToEnglishPage()
         {
             St.InitializeLocalization("en-US");
