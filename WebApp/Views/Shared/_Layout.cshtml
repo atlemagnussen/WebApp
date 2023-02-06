@@ -31,7 +31,14 @@
                         <li><a class="dropdown-item" asp-controller="Home" asp-action="Comingsoon"> Cam 4 </a></li>
         		    </ul>
         		</li>
-                <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="ReportSighting"> Report your sighting! </a></li>
+                <li class="nav-item dropdown">
+        		   <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  Reports  </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" asp-controller="Home" asp-action="ReportSighting"> Report your sighting!</a></li>
+                        <li><a class="dropdown-item" asp-controller="Home" asp-action="ComingSoon"> Archive </a></li>
+                        <li><a class="dropdown-item" asp-controller="Home" asp-action="ComingSoon"> Statistics </a></li>
+        		    </ul>
+        		</li>
         	</ul>
           </div> <!-- navbar-collapse.// -->
          </div> <!-- container-fluid.// -->

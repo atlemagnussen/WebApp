@@ -5,12 +5,29 @@
 
 <form>
     <div class="form-group">
-        <label for="exampleInputEmail1">Name</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+        <br />
+        <br />
+
+
+        <label for="Sighting">Observer</label>
+        <input type="text" class="form-control" placeholder="Name" >
+        <br />
+
+        <label for="Sighting">Place</label>
+        <input type="text" class="form-control" placeholder="Name">
+
+        <br />
+        <label for="Sighting">Date and time</label>
+        <input type="datetime-local" id="meeting-time" name="meeting-time" value="Now" min="2018-06-07T00:00" max="2018-06-14T00:00">
+
+        <br/>
+        <br/>
+        <br/>
+        <textarea  name="description" rows="10" cols="143">Describe your sighting!</textarea>
+
+        <br />
+        <br />
+        <button type="submit" class="btn btn-primary">Submit</button>
     </div>
-    <div class="form-group">
-        <label for="exampleInputPassword1">Etc</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Etc">
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    
 </form>
