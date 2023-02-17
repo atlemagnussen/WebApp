@@ -6,24 +6,40 @@
 <form>
     <div class="form-group">
         <br />
-        <br />
 
+        <label for="Sighting"> Your name (optional)</label> 
+        <input type="text" class="form-control"> 
 
-        <label for="Sighting">Observer</label>
-        <input type="text" class="form-control" placeholder="Name" >
-        <br />
-
-        <label for="Sighting">Place</label>
-        <input type="text" class="form-control" placeholder="Name">
+        
+        <label for="Sighting"> Allow in public archive</label>
+        <label class="switch"> <input type="checkbox" size="50"> <span class="slider round"></span> </label> 
 
         <br />
-        <label for="Sighting">Date and time</label>
-        <input type="datetime-local" id="meeting-time" name="meeting-time" value="Now" min="2018-06-07T00:00" max="2018-06-14T00:00">
+        <br />
+
+        <label for="Sighting"> Your location</label>
+        <input type="text" class="form-control">
+
+        <br />
+
+        <label for="Sighting"> Phenomenon location</label>
+        <input type="text" class="form-control">
+
+        <br />
+        <label for="Sighting"> Phenomenon coordinates (optional) </label>
+        <br/> 1. open <a href="http://bit.ly/hessdalen"target="_blank">Google maps</a> | 2. right click on location | 3. click on coordinates | 4. paste here
+        <input type="text" class="form-control">
+
+        <br />
+        <label for="Sighting"> Date and time </label>
+        <br />
+        <input type="datetime-local" id="sighting-date-time" name="sighting-date-time">
 
         <br/>
-        <br/>
-        <br/>
-        <textarea  name="description" rows="10" cols="143">Describe your sighting!</textarea>
+        <br />
+        <label for="Sighting"> Describe your sighting! </label>
+        <br />
+        <textarea name="description" rows="10" cols="143"></textarea>
 
         <br />
         <br />
