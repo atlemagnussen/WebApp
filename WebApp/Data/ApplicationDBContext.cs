@@ -1,25 +1,16 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MySql.EntityFrameworkCore.Extensions;
 using WebApp.Models;
+using System.Diagnostics;
 
 namespace WebApp.Data
 {
     public class ApplicationDBContext : DbContext
     {
-        /*
-        public ApplicationDBContext(DbContextOptions<ApplicationDBContext> options) : base(options)
-        {
-               
-        }
-
-        */
+        
+        public ApplicationDBContext(DbContextOptions<ApplicationDBContext> options) : base(options) {}
 
         public DbSet<Sighting> Sightings { get; set; }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseMySQL("Server=16.170.225.216;Database=MySQLHessdalen;Uid=ClientDBAccess;Pwd=ClientDBAccessPass;");
-        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

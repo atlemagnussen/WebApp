@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using WebApp.Data;
 using WebApp.Models;
 using WebApp.Resources;
 
@@ -8,10 +9,15 @@ namespace WebApp.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly ApplicationDBContext _db;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, ApplicationDBContext db)
         {
             _logger = logger;
+            _db = db;
+
+            foreach (var sighting in _db.Sightings)
+                Debug.WriteLine(sighting);
         }
 
         public IActionResult Index()

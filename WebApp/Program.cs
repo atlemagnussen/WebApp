@@ -11,16 +11,14 @@ namespace WebApp
     {
         public static void Main(string[] args)
         {
-            Debug.WriteLine("********* MAIN FUNCTION**********************************");
-            TestDatabase();
-
             var builder = WebApplication.CreateBuilder(args);
 
             St.InitializeLocalization("en-US");
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-           // builder.Services.AddDbContext<ApplicationDBContext>(options => options.UseSqlServer(
-                //builder.Configuration.GetConnectionString("DefaultConnection")));
+
+            builder.Services.AddDbContext<ApplicationDBContext>(options => 
+                options.UseMySQL(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             var app = builder.Build();
 
@@ -44,51 +42,6 @@ namespace WebApp
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
             app.Run();
-
-        }
-
-        private static void TestDatabase()
-        {
-            try
-            {
-                using (var context = new ApplicationDBContext())
-                {
-                    context.Database.EnsureCreated();
-
-                    //Add sighting report
-
-                    var sighting = new Sighting()
-                    {
-                        ObserverName = "Benedikt Örn Hjaltason",
-                        AllowPublicDisplay = true,
-                        ObserverLocation = "Hessdalen",
-                        PhenomenonLocationName = "Hessdalen",
-                        PhenomenonLocationCoordinates = "32498432980432,9084329432098",
-                        DateAndTime = DateTime.Now,
-                        Description = "Så lys på himmelen."
-                    };
-
-                    context.Sightings.Add(sighting);
-
-                    context.SaveChanges();
-                }
-
-                //Add sighting report
-                using (var context = new ApplicationDBContext())
-                {
-                    context.Database.EnsureCreated();
-
-                    foreach (var sighting in context.Sightings)
-                    {
-                        Debug.WriteLine(sighting);
-                    }
-                }
-            }
-
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex);
-            }
         }
     }
 }
