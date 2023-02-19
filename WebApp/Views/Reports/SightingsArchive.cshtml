@@ -28,5 +28,31 @@
             </th>
         </tr>
     </thead>
+    <tbody>
+        @foreach(var sighting in Model)
+        {
+            <tr>
+                <td width="50%">
+                    @sighting.ObserverName
+                </td>
+                <td width="50%">
+                    @sighting.ObserverLocation
+                </td>
+                <td width="50%">
+                    @sighting.PhenomenonLocationName
+                </td>
+                <td width="50%">
+                    @sighting.PhenomenonLocationCoordinates
+                </td>
+                <td width="50%">
+                    @sighting.DateAndTime
+                </td>
+                <td width="50%">
+                    @sighting.Description
+                </td>
+
+            </tr>
+        }
+    </tbody>
 
 </table>

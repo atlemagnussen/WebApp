@@ -1,49 +1,49 @@
-﻿@{
+﻿@model Sighting
+
+@{
     ViewData["Title"] = "Report your sighting";
     Layout = "_Layout";
 }
 
-<form>
-    <div class="form-group">
+<form method="post">
         <br />
 
-        <label for="Sighting"> Your name (optional)</label>
-        <input type="text" class="form-control">
+        <label asp-for="ObserverName"> Your name (optional)</label>
+        <input asp-for="ObserverName" type="text" class="form-control">
 
 
-        <label for="Sighting"> Allow in public archive</label>
-        <label class="switch"> <input type="checkbox" size="50"> <span class="slider round"></span> </label>
-
-        <br />
-        <br />
-
-        <label for="Sighting"> Your location</label>
-        <input type="text" class="form-control">
+        <label input asp-for="AllowPublicDisplay" class="form-control"> Allow in public archive</label>
+        <label class="switch"> <input asp-for="AllowPublicDisplay" type="checkbox" size="50"> <span class="slider round"></span> </label>
 
         <br />
+        <br />
 
-        <label for="Sighting"> Phenomenon location</label>
-        <input type="text" class="form-control">
+        <label asp-for="ObserverLocation"> Your location</label>
+        <input asp-for="ObserverLocation" type="text" class="form-control">
 
         <br />
-        <label for="Sighting"> Phenomenon coordinates (optional) </label>
+
+        <label asp-for="PhenomenonLocationName"> Phenomenon location</label>
+        <input label asp-for="PhenomenonLocationName" type="text" class="form-control">
+
+        <br />
+        <label asp-for="PhenomenonLocationCoordinates"> Phenomenon coordinates (optional) </label>
         <br /> 1. open <a href="http://bit.ly/hessdalen" target="_blank">Google maps</a> | 2. right click on location | 3. click on coordinates | 4. paste here
-        <input type="text" class="form-control">
+        <input asp-for="PhenomenonLocationCoordinates" type="text" class="form-control">
 
         <br />
-        <label for="Sighting"> Date and time </label>
+        <label asp-for="DateAndTime"> Date and time </label>
         <br />
-        <input type="datetime-local" id="sighting-date-time" name="sighting-date-time">
-
-        <br />
-        <br />
-        <label for="Sighting"> Describe your sighting! </label>
-        <br />
-        <textarea name="description" rows="10" cols="143"></textarea>
+        <input asp-for="DateAndTime" type="datetime-local" id="sighting-date-time" name="sighting-date-time" class="form-control">
 
         <br />
         <br />
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
+        <label asp-for="Description"> Describe your sighting! </label>
+        <br />
+        <textarea asp-for="Description" name="description" rows="10" cols="143" class="form-control"></textarea>
+
+        <br />
+        <br />
+        <button asp-action="Submit" type="submit" class="btn btn-primary">Submit</button>
 
 </form>
